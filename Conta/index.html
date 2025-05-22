@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>DivsMootors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src='../Scripts/localstorage.js' defer></script>
+    <script src='../Scripts/endereco.js' defer></script>
+</head>
+<body id="conta">
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../Landing_Page/index.html"  class="nav-logo">
+                <img src="../logo.png" alt="DivsMootors Logo" class="logo-img">
+                <i>DivsMootors</i>
+            </a>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn" id="sobre-btn">
+                <a href="../Sobre_Nos/index.html">Sobre Nos</a>
+            </button>
+            <button class="nav-btn" id="login-btn">
+                <a href="index.html">Login</a>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Texto</h1>
+            <button class="btn" onclick="deslogar()">Deslogar</button>
+        </div>
+    </section>
+
+    <div class="botoes">
+        <button class="btn" onclick="listar()">Listar Endereços</button>
+        <button class="btn" id="cadastrar" onclick="exibir_form(this)">Cadastrar Endereços</button>
+        <button class="btn" id="atualizar" onclick="exibir_form(this)">Atualizar Endereços</button>
+    </div>
+
+    <form id="form">
+        <h1>Endereços</h1><br>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome"><br>
+
+        <label>CEP</label>
+        <input type="text" name="cep" id="cep" onchange="buscar_endereco()"><br>
+
+        <label>Endereço</label>
+        <input type="text" name="endereco" id="endereco"><br>
+
+        <label>Numero</label>
+        <input type="text" name="numero" id="numero"><br>
+
+        <label>Complemento (Opcional)</label>
+        <input type="text" name="complemento" id="complemento"><br>
+
+        <input class="btn_form" id="salvar" type="button" value="Salvar"/>
+        <input class="btn_form" id="cancelar" type="button" value="Cancelar" onclick="exibir_form(this)"/>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2025 DivsMootors. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

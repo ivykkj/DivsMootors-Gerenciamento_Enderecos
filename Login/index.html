@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>DivsMootors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src='../Scripts/localstorage.js' defer></script>
+    <script src='../Scripts/login.js' defer></script>
+</head>
+<body id="login">
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../Landing_Page/index.html"  class="nav-logo">
+                <img src="../logo.png" alt="DivsMootors Logo" class="logo-img">
+                <i>DivsMootors</i>
+            </a>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn" id="sobre-btn">
+                <a href="../Sobre_Nos/index.html">Sobre Nos</a>
+            </button>
+            <button class="nav-btn" id="login-btn">
+                <a href="index.html">Login</a>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu próximo veículo a apenas um clique</h1>
+        </div>
+    </section>
+
+    <form id="form">
+        <h1>Login</h1><br>
+        <label>Email</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label>Senha</label>
+        <input type="password" name="password" id="password"><br>
+
+        <input class="btn_login" type="button" value="Login" onclick="validar_dados()"/>
+        <label>
+            Não tem uma conta?<br><a href="../Cadastro/index.html">Crie Agora</a>
+        </label>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 DivsMootors. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>
